@@ -1,0 +1,15 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    position:relative;
+    left:200px;
+
+
+    border:1px solid blue;
+    width:70%;
+}
