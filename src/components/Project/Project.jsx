@@ -1,7 +1,7 @@
 import {NavLink, useParams} from 'react-router-dom'
 import { useContext } from 'react'
 
-import data from '../../Data/data.js'
+// import data from '../../Data/data.js'
 
 import './project.scss'
 import { DataContext } from '../DataContext.jsx'
@@ -24,8 +24,9 @@ export default function Project(){
     return (
         <section className="container">
         
-       <h1>{project.title}</h1>
-       <h2>{project.year}</h2>
+            <h1>{project.title}</h1>
+            <h2>{project.year}</h2>
+            <span>{project.languages}</span>
 
 
         </section>
