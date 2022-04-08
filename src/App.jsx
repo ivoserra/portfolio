@@ -13,11 +13,12 @@ export default function App(){
        
        <section className ="header">
        <Header/>
+      
        </section>
       
         <Path/>
               
-        </section>
+    </section>
           
     
     )

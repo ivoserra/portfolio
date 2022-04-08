@@ -6,17 +6,33 @@
 }
 
 
-nav{
-    width:45%;
-    border:1px solid blue;
+.header{
+    width:100%;
     display:flex;
-    justify-content: space-between;
-
-
-    a{
-        margin:10px;
-        text-decoration: none;
-        color:black;
+    justify-content: center;
+    position:relative;
+    
+    
+    .sub-header{
+        width:60%;
 
     }
+    
+
+
+    .nav-sub-header{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+    
+    
+        a{
+            margin:10px;
+            text-decoration: none;
+            color:black;
+    
+        }
+    }
+
 }
+
