@@ -1,38 +1,136 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
+@media screen and (min-width: 320px){
 
-.header{
-    width:100%;
-    display:flex;
-    justify-content: center;
-    position:relative;
-    
-    
-    .sub-header{
-        width:60%;
+ .header{
+     display:flex;
+     flex-direction: column;
+     width:100%;
 
-    }
-    
+     .brand{
+      text-align: center;
+
+        h1{
+            font-size: 5.5rem;
+        }
+   
+        p{
+            font-size: 2.5rem;
+            
+        }
+      
+   
+     }
+
+     
+
+     .nav-sub-header{
+         margin-top:1rem;
+         width:100%;
+         display:flex;
+         justify-content: space-evenly;
+
+         .subLinkOne,
+         .subLinkTwo,
+         .subLinkThree{
+            text-decoration: none;
+            position:relative;
+            margin-top:0.5rem;
+            margin-bottom:0.5rem;
+            font-size: 1rem;
+            color:black;
+            cursor:pointer;
+
+                &:hover{
+                    color:gray;
+                }
+
+                &:focus{
+                    color:gray;
+                }
+        }
+
+            
+        
+
+        .subLinkOne:after{
+            content:'';
+            position:absolute;
+            top:1.3rem;
+            width:100%;
+            transform:scaleX(0);
+            height:2px;
+            bottom:0;
+            left:0;
+            background-color: rgb(44, 44, 44);
+            transform-origin:bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .subLinkTwo:after{
+            content:'';
+            position:absolute;
+            top:1.3rem;
+            width:100%;
+            transform:scaleX(0);
+            height:2px;
+            bottom:0;
+            left:0;
+            background-color: rgb(44, 44, 44);
+            transform-origin:bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .subLinkThree:after{
+            content:'';
+            position:absolute;
+            top:1.3rem;
+            width:100%;
+            transform:scaleX(0);
+            height:2px;
+            bottom:0;
+            left:0;
+            background-color: rgb(68, 68, 68);
+            transform-origin:bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .subLinkOne:hover:after,
+        .subLinkTwo:hover:after,
+        .subLinkThree:hover:after{
+            transform:scaleX(1);
+            transform-origin: bottom left;
+            
+        }
+     }
+ }
 
 
-    .nav-sub-header{
+}
+
+@media screen and(min-width:768px) {
+ 
+    .brand{
         width:100%;
         display:flex;
-        justify-content: space-between;
-    
-    
-        a{
-            margin:10px;
-            text-decoration: none;
-            color:black;
-    
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-evenly;
+     
+        img{
+            display:block;
+           border-radius: 100%;
         }
-    }
 
+    }
+    
 }
 
