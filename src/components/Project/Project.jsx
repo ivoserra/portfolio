@@ -34,13 +34,12 @@ export default function Project(){
         
         
         <section className="content">
-        <AnimatedPage>
+       
            <section className="image-container">
               {project.video ?  <video  src={project.video.charAt(0)=== '/' ? process.env.PUBLIC_URL + `${project.video}`: project.video} alt={project.name} autoPlay loop/>
             : null }
             </section>
-        </AnimatedPage>
-        <AnimatedPage>
+ 
             <section className="description_container">
                 <section className="text">
                     <h2>description</h2>
@@ -66,7 +65,7 @@ export default function Project(){
                     </section>
                 </section>
             </section>
-            </AnimatedPage>
+          
 
         </section>
         </section>
