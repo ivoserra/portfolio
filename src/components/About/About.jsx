@@ -1,8 +1,13 @@
 
 
+import './About.scss'
 
 export default function About(){
 
 
-    return(<p>About me</p>)
+    return(
+        <section className="mainAbout">
+
+        </section>
+    )
 }

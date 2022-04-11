@@ -13,27 +13,28 @@
  .header{
      display:flex;
      flex-direction: column;
+     align-content: center;
      width:100%;
 
      .brand{
-      text-align: center;
-
+         width:100%;
+         padding:1rem;
+    
+   
         h1{
             font-size: 5.5rem;
         }
    
         p{
             font-size: 2.5rem;
-            
+    
         }
-      
-   
+    
      }
 
      
 
      .nav-sub-header{
-         margin-top:1rem;
          width:100%;
          display:flex;
          justify-content: space-evenly;
@@ -117,17 +118,61 @@
 }
 
 @media screen and(min-width:768px) {
+
+   .header{
+       width:100%;
+       justify-content: center;
+       align-items: center;
+   }
  
-    .brand{
-        width:100%;
+    .brand{      
         display:flex;
         flex-direction: row;
-        align-items: baseline;
+        align-items:baseline;
         justify-content: space-evenly;
-     
-        img{
-            display:block;
-           border-radius: 100%;
+        
+
+    }
+
+    .sub-header{
+        width:100%;
+
+        .nav-sub-header{
+            display:flex;
+            justify-content: space-evenly;
+        }
+
+
+    }
+
+    
+}
+
+@media screen and(min-width: 1024px){
+
+    .header{
+        display:flex;
+
+        .brand{
+            justify-content: space-between;
+            width:82%;
+            margin:2rem 6rem;
+            
+        }
+
+    }
+    
+}
+@media screen and(min-width: 1440px){
+
+    .header{
+        display:flex;
+
+        .brand{
+            justify-content: space-between;
+            width:73%;
+            margin:2rem 6rem;
+            
         }
 
     }

@@ -1,3 +1,4 @@
+
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, Switch, useLocation } from "react-router-dom";
 
@@ -15,9 +16,9 @@ export default function Path(){
     return(
 
 <section>
-        {/* <AnimatePresence exitBeforeEnter> */}
-                {/* <Routes key={location.pathname} location={location}> */}
-                <Routes>
+       <AnimatePresence exitBeforeEnter>
+                 <Routes key={location.pathname} location={location}>
+              
             
                     <Route path="home" element={<></>}/>
                     <Route path="about" element={<About/>}/>"
@@ -32,7 +33,7 @@ export default function Path(){
 
                     <Route path="*" element={<p>pagenotfound</p>}/>
                 </Routes>
-        {/* </AnimatePresence> */}
+        </AnimatePresence>
 
 </section>
         

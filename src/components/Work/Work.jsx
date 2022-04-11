@@ -19,54 +19,52 @@ const box ={
     opacity:1,
   transition:{
     type:"spring",
-    damping:100,
-    staggerChildren:0.2}
+    damping:150,
+    }
 },}
 
 const item={
   visible:{opacity:1, y:0},
-  hidden:{opacity:0, y:100,}
+  hidden:{opacity:0, y:-100,}
 }
 
       
     return (
    
      
-     
         <section className="works">
-        {/* <motion.div initial={{opacity:0, y:100}} animate={{ opacity:1, y:0 }} transition={{ type: "spring", stiffness: 50 , duration:2}} className="projects"> */}
-        <motion.div initial ="hidden" animate="visible" variants={box} className="projects">
+        
+        <div className="projects">
        
         <section className="project">
-          <motion.li variants={item} ><h2>HTML / CSS / REACT</h2></motion.li>
-          <motion.li variants={item} className="title_one"><NavLink key="daddesignshop" to="daddesignshop">D.A.D. design shop</NavLink></motion.li>
-          <motion.li variants={item} className="title_two"><NavLink key="barbershop" to="barbershop" >Barbershop Amsterdam</NavLink></motion.li>
-          <motion.li variants={item} className="title_three"><NavLink key="ideascometogether" to="ideascometogether" >Ideas Come Together</NavLink></motion.li>                   
+          <li ><h2>HTML / CSS / REACT</h2></li>
+          <li className="title_one"><NavLink key="daddesignshop" to="daddesignshop">D.A.D. design shop</NavLink></li>
+          <li className="title_two"><NavLink key="barbershop" to="barbershop" >Barbershop Amsterdam</NavLink></li>
+          <li className="title_three"><NavLink key="ideascometogether" to="ideascometogether" >Ideas Come Together</NavLink></li>                   
           </section> 
        
         
         <section className='project'>
-          <motion.li variants={item} ><h2>DOM and API</h2></motion.li>
-          <motion.li variants={item} className="title_four"><NavLink key="traveldestination" to="traveldestination">Travel destination</NavLink></motion.li>
-          <motion.li variants={item} className="title_five"><NavLink key="asyncgitrepository" to="asyncgitrepository">Git repository Api</NavLink></motion.li>
+          <li ><h2>DOM and API</h2></li>
+          <li className="title_four"><NavLink key="traveldestination" to="traveldestination">Travel destination</NavLink></li>
+          <li className="title_five"><NavLink key="asyncgitrepository" to="asyncgitrepository">Git repository Api</NavLink></li>
         </section>
 
         <section className="project">
-          <motion.li variants={item} ><h2>REACT</h2></motion.li>
-          <motion.li variants={item} className="title_six"><NavLink key="randompolaroid" to="randompolaroid" >Random Polaroid</NavLink></motion.li>
-          <motion.li variants={item} className="title_seven"><NavLink key="fetchyflicker" to="fetchyflicker" >Fetchy Flicker</NavLink></motion.li>
-          <motion.li variants={item} className="title_eight"><NavLink key="localstoragethemetodos" to="localstoragethemetodos" >Local Storage</NavLink></motion.li>               
+          <li ><h2>REACT</h2></li>
+          <li className="title_six"><NavLink key="randompolaroid" to="randompolaroid" >Random Polaroid</NavLink></li>
+          <li className="title_seven"><NavLink key="fetchyflicker" to="fetchyflicker" >Fetchy Flicker</NavLink></li>
+          <li className="title_eight"><NavLink key="localstoragethemetodos" to="localstoragethemetodos" >Local Storage</NavLink></li>               
         </section>
 
        
 
         <section className="project">
-          <motion.li variants={item}><h2>REACT and express</h2></motion.li>
-          <motion.li variants={item} ><NavLink key="messageboard" to="messageboard">Message Board</NavLink></motion.li>
-          <motion.li variants={item} ><NavLink key="fetchyflicker" to="fetchyflicker">Barbershop</NavLink></motion.li>
-          <motion.li variants={item} ><NavLink key="localstoragethemetodos" to="localstoragethemetodos">Ideas Come Together</NavLink></motion.li>                    
+          <li ><h2>REACT and express</h2></li>
+          <li ><NavLink key="messageboard" to="messageboard">Message Board</NavLink></li>
+                      
         </section>
-        </motion.div>
+        </div>
 
         <Outlet/>
 
