@@ -65,7 +65,7 @@
         .subLinkOne:after{
             content:'';
             position:absolute;
-            top:1.3rem;
+            top:1.5rem;
             width:100%;
             transform:scaleX(0);
             height:2px;
@@ -79,7 +79,7 @@
         .subLinkTwo:after{
             content:'';
             position:absolute;
-            top:1.3rem;
+            top:1.5rem;
             width:100%;
             transform:scaleX(0);
             height:2px;
@@ -93,7 +93,7 @@
         .subLinkThree:after{
             content:'';
             position:absolute;
-            top:1.3rem;
+            top:1.5rem;
             width:100%;
             transform:scaleX(0);
             height:2px;
@@ -167,6 +167,7 @@
 
     .header{
         display:flex;
+        justify-content: center;
 
         .brand{
             justify-content: space-between;
@@ -174,6 +175,7 @@
             margin:2rem 6rem;
             
         }
+
 
     }
     

@@ -12,28 +12,12 @@ export default function Work(){
 const {data} = useContext(DataContext)
 
 
-
-const box ={
-  hidden:{opacity:0},
-  visible:{
-    opacity:1,
-  transition:{
-    type:"spring",
-    damping:150,
-    }
-},}
-
-const item={
-  visible:{opacity:1, y:0},
-  hidden:{opacity:0, y:-100,}
-}
-
       
     return (
    
      
         <section className="works">
-        
+    
         <div className="projects">
        
         <section className="project">
@@ -65,7 +49,7 @@ const item={
                       
         </section>
         </div>
-
+       
         <Outlet/>
 
         </section>

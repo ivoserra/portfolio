@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact.jsx'
 import Home from "./components/Home/Home.jsx";
 import Project from "./components/Project/Project.jsx";
 import Work from './components/Work/Work.jsx'
+import Error from './components/Error/Error.jsx'
 
 
 export default function Path(){
@@ -20,18 +21,16 @@ export default function Path(){
                  <Routes key={location.pathname} location={location}>
               
             
-                    <Route path="home" element={<></>}/>
-                    <Route path="about" element={<About/>}/>"
-                    <Route path ="contact" element ={<Contact/>}/>
-                   
-                
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/about" element={<About/>}/>"
 
-                    <Route path="work" element={<Work/>}>
+                    <Route path="/work" element={<Work/>}>
                         <Route path=":workName" element={<Project/>}/>
+                        
                     </Route>
 
 
-                    <Route path="*" element={<p>pagenotfound</p>}/>
+                    <Route path="*" element={<Error/>}/>
                 </Routes>
         </AnimatePresence>
 

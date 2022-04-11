@@ -1,0 +1,59 @@
+
+
+
+@media screen and(min-width: 320px){
+
+    .main-error{
+    
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:0.5rem;
+    
+        .mainSubError{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+    
+            h1{
+                font-size: 4rem;
+                border-bottom: 5px solid black;
+            }
+    
+            p{
+                margin-top: 1rem;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+.main-error{
+    width:100%;
+    height:65vh;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:2rem;
+
+    .mainSubError{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            font-size: 4rem;
+            border-bottom: 5px solid black;
+        }
+
+        p{
+            margin-top: 1rem;
+        }
+    }
+}

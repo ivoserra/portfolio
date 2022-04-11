@@ -212,10 +212,12 @@
 
 
     .projects{
-        border:1px solid red;
         margin:2rem 2rem;
+        display:flex;
+        flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: space-evenly
     }
     
 }

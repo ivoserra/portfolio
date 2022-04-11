@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 import './Header.scss'
 
 const box ={
-    hidden:{opacity:0, y:100,},
-    visible:{ opacity:1, y: 10, transition:{type:"tween", duration:1}},
+    hidden:{opacity:0, y:-100,},
+    visible:{ opacity:1, y: 0, transition:{type:"tween", duration:1}},
 }
   
   const item={
@@ -27,10 +27,10 @@ export default function Header(){
                 <p>M.E.R.N. stack </p>
                 </motion.section>
 
-                <section variants={item} className="sub-header">
+                <section className="sub-header">
                 
                 <nav className="nav-sub-header">
-                        <NavLink to="home" className="subLinkOne">home</NavLink>
+                        <NavLink to="/" className="subLinkOne">home</NavLink>
                         <NavLink to="about" className="subLinkTwo">about</NavLink>
                         <NavLink to="work" className="subLinkThree">work</NavLink>
                 </nav>

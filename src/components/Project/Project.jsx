@@ -20,27 +20,57 @@ export default function Project(){
 
     const project= data.find(item => item.name === workName)
    
+    const header={
+        hidden:{opacity:0, y:50},
+        visible:{ opacity:1, y:0, transition:{type:"tween", duration:0.5}},
+        exit:{opacity:0, y:50, transition:{type:"tween", duration:1.2}}
+    }
+
+    const text={
+        hidden:{opacity:0, y:150},
+        visible:{ opacity:1, y:0, transition:{type:"tween", duration:1}},
+        exit:{opacity:0, y:150, transition:{type:"tween", duration:1}}
+    }
+
+    const link={
+        hidden:{opacity:0, y:180},
+        visible:{ opacity:1, y:0, transition:{type:"tween", duration:1.2}},
+        exit:{opacity:0, y:150, transition:{type:"tween", duration:0.5}}
+    }
+
+    const visual={
+        hidden:{opacity:0, y:250},
+        visible:{ opacity:1, y:0 , transition:{type:"tween", duration:0.5}},
+        exit:{opacity:0, y:150, transition:{type:"tween", duration:0.5}}
+    }
 
 
     return (
         <AnimatedPage>
        
+       
         <section className="main_project">
-        
+        <motion.section variants={header} initial="hidden" animate="visible" exit="exit">
         <section className="header_project">
             <h1>{project.title}</h1>
             <p>{project.year}</p>
         </section>
-        
+        </motion.section>
         
         <section className="content">
        
+        
            <section className="image-container">
+           <motion.section variants={visual} initial="hidden" animate="visible" exit="exit">
               {project.video ?  <video  src={project.video.charAt(0)=== '/' ? process.env.PUBLIC_URL + `${project.video}`: project.video} alt={project.name} autoPlay loop/>
             : null }
+            </motion.section>  
             </section>
- 
+          
+
+        
             <section className="description_container">
+            <motion.section variants={text} initial="hidden" animate="visible" exit="exit">
                 <section className="text">
                     <h2>description</h2>
                     <p>{project.description}</p>
@@ -49,8 +79,9 @@ export default function Project(){
                     <p>Year: {project.year}</p>
                     <p>Author: {project.author}</p>
                 </section>
+            </motion.section>
 
-
+            <motion.section variants={link} initial="hidden" animate="visible" exit="exit">
                 <section className="links">
                     <h2>Project links</h2>
                     <section className="linkBlock">
@@ -64,6 +95,7 @@ export default function Project(){
                         </section>
                     </section>
                 </section>
+            </motion.section>
             </section>
           
 

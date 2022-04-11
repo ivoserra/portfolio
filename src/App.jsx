@@ -16,8 +16,8 @@ export default function App(){
        
        <Header/>
        
-  
-        <Path/>
+
+       <Path/>
     
     </section>
           
