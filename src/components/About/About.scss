@@ -125,6 +125,7 @@
                         left:35vw;
                         width:185px;
                         z-index:1;
+                        transform: rotate(5deg);
                     }
 
                     .imgThree{
@@ -239,16 +240,18 @@
 @media screen and(min-width:1440px){
 
     .mainAbout{
+        margin:0rem 0rem;
 
         .inner_about{
-            margin:2rem 0rem;
+           
+            margin:1rem 0rem;
             display:flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-evenly;
 
 
             .aboutImage{
-               border:1px solid red;
+            
                 width:45%;
                 height:65vh;
                 left:5vw;
@@ -257,31 +260,33 @@
                     position:absolute;
                     top:4vh;
                     left:17vw;
-                    width:200px;
+                    width:250px;
                     z-index:1;
+                    transform: rotate(8deg);
                 }
 
                 .imgThree{
                     position:absolute;
                     width:220px;
                     top:0vh;
-                    left:25vw;
+                    left:28vw;
                     z-index:0
                 }                
                 .dPhoto{
                     position:absolute;
-                    width:320px;
+                    width:280px;
                     bottom:5vh;
-                    left:3vw;
+                    left:5vw;
                     right:0vw;
                     z-index:-1
                 }
             }
 
             .aboutText{
-                width:40%;
-                margin:0.5rem 5rem;
-                height:50vh;
+     
+                width:35%;
+                margin:0rem 5rem;
+                height:65vh;
 
                 .aboutTextContent{
 

@@ -36,23 +36,20 @@ import dPhoto from '../../images/dphoto.png'
                                     <section className="about_intro">
                                     <h2>hello reader from the future</h2>
                                         <p>"The translation of Serra from portuguese can mean a small mountain ( I'm 1,62m tall ) or a saw."</p> 
-                                        <p>My name is Ivo Serra, Im originally from Lisbon born in 1979 and living in Berlin, Germany since 2011. I have a Bachelor in Visual Arts at AR.CO in Lisbon Portugal and a Master degree in Arts at the University of Arts of Berlin UDK.</p>
-                                        <p>For 23 years that I have worked as an Multi disciplinary content creator. Leading teams of people and collaborating with others in the context of Art, Festivals, galleries and art agencies in several countries in Europe and the USA.</p>
-                                      
+                                        <p>My name is Ivo Serra, Im originally from Lisbon born in 1979 and living in Berlin, Germany since 2011. I have a Bachelor in Visual Arts at AR.CO in Lisbon Portugal and a Master degree in Arts at the University of Arts of Berlin UDK.
+                                        For 23 years that I have worked as an Multi disciplinary artist and content creator. Leading teams of people and collaborating with others in the context of Art, Festivals, galleries and art agencies in several countries in Europe and the USA.</p>
+                                        <p>In 2021 I started a fullstack program at Digital Career Institute in Berlin and since then my journey in the web-development has been my main focus.</p>
                                     </section>
 
                                     <section className="about_statement">
                                         <h2>statement</h2>
                                         <p>I am an efficient, creative and confident queer man with great passion for web-development and design. Consistently demonstrating experience in content creation and innovation in the fields of visual communication, video archives in art and culture. </p>
                                         <p>My curiosity and enthusiasm are my driving force to gain more skills and to have more knowledge. This has leaded me to work and collaborate internationally with amazing projects, teams and non-profit organizations.</p>
-                                        
-                                        <p>Its April 2022 and Im almost graduating from Digital career Institute aka DCI in Berlin. It has been an amazing experience and Web development is a huge mountain that im surely happy to keep climbing up and to continuously progressing and learn !</p>
                                     </section>
                                     
                                     <section className="about_hobbies">
                                         <h2>hobbies</h2>
-                                        <p>At my core I truly believe Im a caring creative person, I love creative thinking processes and to bring some sense of joy to people' lives.</p>
-                                        <p>I like to draw and design, nowadays my hobbies are mostly on topics of queer identiy or GAY stuff that end up on my wall or on instagram. I mostly work with drawings and collages, archival materials like photos and videos.</p>
+                                        <p>I like to draw and design, im a sucker for everything that is visual, I like to spend time learning other stuff like figma, blender or libraries like three.js. Nowadays my hobbies are mostly on topics of queer identiy or GAY stuff that end up on my wall or on instagram. I love to laugh, humour(all kinds), dance, pop-culture, underground culture, alternative indy music, meet people, summer barbecue, cook, bike around the city, cinnamon buns and everything sweet that is made with lemon. </p>
                                     </section>
 
                                     
