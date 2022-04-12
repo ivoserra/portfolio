@@ -1,9 +1,8 @@
 
 import './home.scss'
-import mountain from '../../images/mountainY.png'
+import mount from '../../images/Mount.png'
 import cloud from '../../images/cloud.png'
 
-import AnimatedPage from '../Animation/AnimatedPage'
 import { motion } from 'framer-motion'
 
 export default function Home(){
@@ -29,7 +28,7 @@ export default function Home(){
 
            <motion.section variants={serra} initial="hidden" animate="visible" exit="exit">
             <section className='Hero_image'>
-                <img src={mountain} className="mountain"></img>
+                <img src={mount} className="mountain"></img>
                 <img className="cloud" src={cloud}></img>
                 <img className="cloudOne" src={cloud}></img>
                 <img></img>

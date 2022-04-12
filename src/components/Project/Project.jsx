@@ -1,9 +1,9 @@
-import {Outlet, useParams} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 import { useContext } from 'react'
 import{ BsCodeSquare} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
 import { DataContext } from '../DataContext.jsx'
-import { AnimatePresence, motion} from 'framer-motion'
+import { motion} from 'framer-motion'
 import './project.scss'
 import AnimatedPage from '../Animation/AnimatedPage.jsx'
 

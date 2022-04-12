@@ -1,8 +1,305 @@
 
 
+@media screen and(min-width:320px){
 
-.mainAbout{
-    margin:2rem 25vh;
-    border:1px solid red;
-    height:56vh;
+    .mainAbout{
+
+       width:100%;
+        padding:1rem;
+    
+        .inner_about{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+    
+            .aboutImage{
+                position:relative;
+                width:50%;
+                height:65vh;
+    
+                .imgOne{
+                    position:absolute;
+                    top:2vh;
+                    left:1rem;
+                    width:165px;
+                    z-index:1;
+                }
+    
+                .imgThree{
+                    position:absolute;
+                    width:160px;
+                    top:0vh;
+                    left:40vw;
+                    z-index:0
+                }
+    
+           
+               
+                .dPhoto{
+                    position:absolute;
+                    width:220px;
+                    bottom:6.2vh;
+                    left:1vw;
+                    z-index:-1
+                }
+           
+    
+            }
+    
+            .aboutText{
+              
+                .aboutTextContent{
+    
+                    h2{
+                        font-size: 0.9rem;
+                        margin-top:0.5rem;
+                    }
+    
+                    p{
+                        font-size: 0.9rem;
+                        margin-top: 0.5rem;
+                        margin-bottom:0.7rem;
+                    }
+                    
+                }
+
+                .about_links{
+                    display:flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    margin-top:1rem;
+                    
+
+                   .about_link{
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       justify-content: center;
+                       margin-left:0.5rem;
+                       margin-right: 1.5rem;
+                       text-align: center;
+                       
+                       a{
+                           text-decoration: none;
+                           font-size: 2rem;
+                           margin:0.5rem 0rem;
+                           color:black;
+                           cursor:pointer;
+                       }
+
+                       p{
+                           font-size: 0.7rem;
+                       }
+                   }
+
+
+                }
+            }
+
+
+        }
+    }
+    
+}
+
+
+@media screen and(min-width:768px){
+
+        .mainAbout{
+           
+            padding:1rem;
+
+            .inner_about{
+                display:flex;
+                justify-content: space-between;
+
+
+                .aboutImage{
+                    position:relative;
+                    
+
+                    .imgOne{
+                        position:absolute;
+                        top:2vh;
+                        left:35vw;
+                        width:185px;
+                        z-index:1;
+                    }
+
+                    .imgThree{
+                       
+                        position:absolute;
+                        width:200px;
+                        top:0vh;
+                        left:55vw;
+                        z-index:0
+                    }                
+                    .dPhoto{
+                      
+                        position:absolute;
+                        width:250px;
+                        bottom:6.2vh;
+                        left:15vw;
+                        right:0vw;
+                        z-index:-1
+                    }
+            
+
+                }
+
+                .aboutText{
+                    margin:2rem 5rem;
+
+                    .aboutTextContent{
+
+                        h2{
+                            font-size: 0.9rem;
+                            margin-top:0.5rem;
+                        }
+
+                        p{
+                            font-size: 0.9rem;
+                            margin-top: 0.5rem;
+                            margin-bottom:0.7rem;
+                        }
+                        
+                    }
+                }
+            }
+        }
+}
+
+
+@media screen and(min-width:1024px){
+
+    .mainAbout{
+        padding:1rem;
+
+        .inner_about{
+            display:flex;
+
+            .aboutImage{
+                position:relative;
+                width:100%;
+                height:60vh;
+               
+            
+                .imgOne{
+                    position:absolute;
+                    top:4vh;
+                    left:38vw;
+                    width:200px;
+                    z-index:1;
+                }
+
+                .imgThree{
+                    position:absolute;
+                    width:200px;
+                    top:0vh;
+                    left:55vw;
+                    z-index:0
+                }                
+                .dPhoto{
+                    position:absolute;
+                    width:300px;
+                    bottom:0vh;
+                    left:18vw;
+                    right:0vw;
+                    z-index:-1
+                }
+        
+
+            }
+
+            .aboutText{
+                margin:5rem 8rem;
+                height:50vh;
+
+                .aboutTextContent{
+
+                    h2{
+                        font-size: 1rem;
+                        margin-top:0.5rem;
+                    }
+
+                    p{
+                        font-size: 0.9rem;
+                        margin-top: 0.5rem;
+                        margin-bottom:0.7rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and(min-width:1440px){
+
+    .mainAbout{
+
+        .inner_about{
+            margin:2rem 0rem;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+
+            .aboutImage{
+               border:1px solid red;
+                width:45%;
+                height:65vh;
+                left:5vw;
+
+                .imgOne{
+                    position:absolute;
+                    top:4vh;
+                    left:17vw;
+                    width:200px;
+                    z-index:1;
+                }
+
+                .imgThree{
+                    position:absolute;
+                    width:220px;
+                    top:0vh;
+                    left:25vw;
+                    z-index:0
+                }                
+                .dPhoto{
+                    position:absolute;
+                    width:320px;
+                    bottom:5vh;
+                    left:3vw;
+                    right:0vw;
+                    z-index:-1
+                }
+            }
+
+            .aboutText{
+                width:40%;
+                margin:0.5rem 5rem;
+                height:50vh;
+
+                .aboutTextContent{
+
+                    h2{
+                        font-size: 1rem;
+                        margin-top:0.5rem;
+                    }
+
+                    p{
+                        font-size: 0.9rem;
+                        margin-top: 0.5rem;
+                        margin-bottom:0.7rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+  
 }

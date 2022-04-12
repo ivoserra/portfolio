@@ -35,7 +35,7 @@ const {data} = useContext(DataContext)
         </section>
 
         <section className="project">
-          <li ><h2>REACT</h2></li>
+          <li ><h2>REACT and API</h2></li>
           <li className="title_six"><NavLink key="randompolaroid" to="randompolaroid" >Random Polaroid</NavLink></li>
           <li className="title_seven"><NavLink key="fetchyflicker" to="fetchyflicker" >Fetchy Flicker</NavLink></li>
           <li className="title_eight"><NavLink key="localstoragethemetodos" to="localstoragethemetodos" >Local Storage</NavLink></li>               
@@ -44,7 +44,7 @@ const {data} = useContext(DataContext)
        
 
         <section className="project">
-          <li ><h2>REACT and express</h2></li>
+          <li ><h2>Express / MongoDB</h2></li>
           <li ><NavLink key="messageboard" to="messageboard">Message Board</NavLink></li>
                       
         </section>
