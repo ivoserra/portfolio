@@ -1,8 +1,8 @@
 
-import Path from './Path.jsx'
-import Header from './components/Header.jsx'
+import Path from './Routes/Path.jsx'
+import Header from './components/Header/Header.jsx'
 import './app.scss'
-import Work from './components/Work/Work.jsx'
+
 
 
 

@@ -4,14 +4,46 @@ import {BsPaletteFill} from 'react-icons/bs'
 import {BsCameraReelsFill} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
 
+import {motion} from 'framer-motion'
+import AnimatedPage from '../Animation/AnimatedPage'
 import './About.scss'
 import portOne from '../../images/ivoOne.png'
 import portTwo from '../../images/ivo2.png'
-import dPhoto from '../../images/dphoto.png'
- 
+import drawPhoto from '../../images/dphoto.png'
+import drawOne from '../../images/drawOne.png'
+import drawTwo from '../../images/drawTwo.png' 
  
  
  export default function About(){
+
+
+    const photoO={hidden: {y:50, opacity:0}, visible:{ y: 0, opacity:1, transition:{type:"spring", duration:1}},exit:{opacity:0, y:50, transition:{type:"tween",duration:0.3}}}
+    const photoT={ hidden: {y:100, opacity:0, rotate:8}, visible:{ y: 0, rotate:8, opacity:1, transition:{type:"spring", duration:2}},exit:{opacity:0, y:50, rotate:8, transition:{ type:"tween", duration:0.6}}}
+    const photoTh={ hidden: {y:100, opacity:0}, visible:{ y: 0, opacity:1, transition:{type:"spring", duration:3}},exit:{opacity:0, y:50, transition:{type:"tween",duration:0.9}}}
+    const photoF={ hidden: {y:100, opacity:0}, visible:{ y: 0, opacity:1, transition:{type:"spring", duration:4}},exit:{opacity:0, y:50, transition:{type:"tween", duration:1.3}}}
+
+    const text={
+        hidden:{opacity:0, y:150},
+        visible:{ opacity:1, y:0, transition:{type:"tween", duration:0.8}},
+        exit:{opacity:0, y:150, transition:{type:"tween", duration:1.5}}
+    }
+    const textO={
+        hidden:{opacity:0, y:150},
+        visible:{ opacity:1, y:0, transition:{type:"tween", duration:0.9}},
+        exit:{opacity:0, y:150, transition:{type:"tween", duration:1}}
+    }
+    const textT={
+        hidden:{opacity:0, y:150},
+        visible:{ opacity:1, y:0, transition:{type:"tween", duration:1}},
+        exit:{opacity:0, y:150, transition:{type:"tween", duration:0.5}}
+    }
+
+    const link={
+        hidden:{opacity:0, y:180},
+        visible:{ opacity:1, y:0, transition:{type:"tween", duration:1.2}},
+        exit:{opacity:0, y:150, transition:{type:"tween", duration:0.5}}
+    }
+
 
 
     return(
@@ -20,41 +52,55 @@ import dPhoto from '../../images/dphoto.png'
                 <section className="inner_about">
 
                         <section className="aboutImage">
+
                             <section className="photoContainer">
-                              
-                                <img src={portOne} className="imgOne"></img>
-                                <img src={dPhoto} className="imgThree"></img>
-                                <img src={portTwo} className="dPhoto"></img>
-                                  
+                          
+                                    <section className="boxOne">
+                                        <motion.img variants={photoO} initial="hidden" animate="visible" exit="exit" src={drawOne} className="drawOne"></motion.img>
+                                        <motion.img variants={photoT} initial="hidden" animate="visible" exit="exit" src={portOne} className="imgOne"></motion.img>
+                                       
+                                    </section>
+                                        <motion.img variants={photoTh} initial="hidden" animate="visible" exit="exit" src={drawPhoto} className="imgThree"></motion.img>
+                                    <section className="boxTwo">
+                                        <motion.img variants={photoTh} initial="hidden" animate="visible" exit="exit" src={portTwo} className="imgTwo"></motion.img>
+                                        <motion.img variants={photoF} initial="hidden" animate="visible" exit="exit" src={drawTwo} className="drawTwo"></motion.img>
+                                    </section>
+                         
                             </section>
 
                         </section>
-
+                        
+                        
                         <section className="aboutText">
+                        
                                 <section className="aboutTextContent">
-                            
+                                <motion.section variants={text} animate="visible" initial="hidden" exit="exit">
                                     <section className="about_intro">
                                     <h2>hello reader from the future</h2>
                                         <p>"The translation of Serra from portuguese can mean a small mountain ( I'm 1,62m tall ) or a saw."</p> 
                                         <p>My name is Ivo Serra, Im originally from Lisbon born in 1979 and living in Berlin, Germany since 2011. I have a Bachelor in Visual Arts at AR.CO in Lisbon Portugal and a Master degree in Arts at the University of Arts of Berlin UDK.
-                                        For 23 years that I have worked as an Multi disciplinary artist and content creator. Leading teams of people and collaborating with others in the context of Art, Festivals, galleries and art agencies in several countries in Europe and the USA.</p>
+                                        For 23 years that I have worked as an Multi disciplinary artist and content creatoron the field of art and visual communication. Leading teams of people and collaborating with others in the context of Art, Festivals, galleries, art and cultural agencies in several countries in Europe and the USA.</p>
                                         <p>In 2021 I started a fullstack program at Digital Career Institute in Berlin and since then my journey in the web-development has been my main focus.</p>
                                     </section>
+                                    
+                                </motion.section>
+                                <motion.section variants={textO} animate="visible" initial="hidden" exit="exit">
 
                                     <section className="about_statement">
-                                        <h2>statement</h2>
-                                        <p>I am an efficient, creative and confident queer man with great passion for web-development and design. Consistently demonstrating experience in content creation and innovation in the fields of visual communication, video archives in art and culture. </p>
-                                        <p>My curiosity and enthusiasm are my driving force to gain more skills and to have more knowledge. This has leaded me to work and collaborate internationally with amazing projects, teams and non-profit organizations.</p>
+                                        <h2>portfolio</h2>
+                                     
                                     </section>
-                                    
+                                    </motion.section>
+                                    <motion.section variants={textT} animate="visible" initial="hidden" exit="exit">
                                     <section className="about_hobbies">
-                                        <h2>hobbies</h2>
-                                        <p>I like to draw and design, im a sucker for everything that is visual, I like to spend time learning other stuff like figma, blender or libraries like three.js. Nowadays my hobbies are mostly on topics of queer identiy or GAY stuff that end up on my wall or on instagram. I love to laugh, humour(all kinds), dance, pop-culture, underground culture, alternative indy music, meet people, summer barbecue, cook, bike around the city, cinnamon buns and everything sweet that is made with lemon. </p>
+                                        <h2>Love</h2>
+                                        <p>I love to draw and make collages, playing around with design and mixing medias, my fetish topics are mostly architecture and queer identiy or GAY stuff that end up on my wall or on instagram. I love minimalism and brutalism, I love to laugh, humour(all kinds), dance, pop-culture, underground culture, alternative indy music, meet people, summer barbecues, cook, bike around the city Berlin and swim in lakes in the summer, Im obsessed with cinnamon buns and everything sweet that is made with lemon. </p>
                                     </section>
-
-                                    
+                                    </motion.section>
                                 </section>
+                             
 
+                            <motion.section variants={link} initial="hidden" animate="visible" exit="exit">
                                 <section className="about_links">
                                     
                                         <section className="about_link">
@@ -75,9 +121,12 @@ import dPhoto from '../../images/dphoto.png'
                                         </section>
                                     
                                 </section>
+                            </motion.section>
 
                         </section>
                 </section>
+
+           
         </section>
     )
 }

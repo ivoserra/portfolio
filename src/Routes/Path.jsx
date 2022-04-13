@@ -2,12 +2,12 @@
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, Switch, useLocation } from "react-router-dom";
 
-import About from './components/About/About.jsx'
-import Contact from './components/Contact/Contact.jsx'
-import Home from "./components/Home/Home.jsx";
-import Project from "./components/Project/Project.jsx";
-import Work from './components/Work/Work.jsx'
-import Error from './components/Error/Error.jsx'
+import About from '../components/About/About.jsx'
+import Contact from '../components/Contact/Contact.jsx'
+import Home from "../components/Home/Home.jsx";
+import Project from "../components/Project/Project.jsx";
+import Work from '../components/Work/Work.jsx'
+import Error from '../components/Error/Error.jsx'
 
 
 export default function Path(){

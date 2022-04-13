@@ -2,7 +2,7 @@ import {useParams} from 'react-router-dom'
 import { useContext } from 'react'
 import{ BsCodeSquare} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
-import { DataContext } from '../DataContext.jsx'
+import { DataContext } from '../Context/DataContext.jsx'
 import { motion} from 'framer-motion'
 import './project.scss'
 import AnimatedPage from '../Animation/AnimatedPage.jsx'
@@ -63,7 +63,7 @@ export default function Project(){
            <section className="image-container">
            <motion.section variants={visual} initial="hidden" animate="visible" exit="exit">
               {project.video ?  <video  src={project.video.charAt(0)=== '/' ? process.env.PUBLIC_URL + `${project.video}`: project.video} alt={project.name} autoPlay loop/>
-            : null }
+            : <img className="projectLogos" src={project.img.charAt(0)==='/'? process.env.PUBLIC_URL + `${project.img}`:project.img} alt={project.name}></img> }
             </motion.section>  
             </section>
           
@@ -83,16 +83,16 @@ export default function Project(){
 
             <motion.section variants={link} initial="hidden" animate="visible" exit="exit">
                 <section className="links">
-                    <h2>Project links</h2>
+                    
                     <section className="linkBlock">
                         <section className="link">
                         <a href={project.repository} target="_blank"><BsCodeSquare className="iconLink"/></a>
                         <p>repository</p>
                         </section>
-                        <section className="link">
+                     {project.deploy ?  <section className="link">
                         <a href={project.deploy} target="_blank"><FaGithub className="iconLink"/></a>
                         <p>deployment</p>
-                        </section>
+                        </section> : null }
                     </section>
                 </section>
             </motion.section>

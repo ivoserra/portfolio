@@ -9,7 +9,7 @@ export default function Home(){
 
     const serra = {
         hidden:{opacity:0, y:50},
-        visible:{ opacity:1, y:0, transition:{type:"tween", duration:1}},
+        visible:{ opacity:1, y:0, transition:{type:"tween", duration:2}},
         exit:{opacity:0, y:30, transition:{type:"tween", duration:1}}
     }
 

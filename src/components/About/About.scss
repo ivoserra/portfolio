@@ -12,40 +12,51 @@
             flex-direction: column;
             justify-content: space-between;
     
-    
             .aboutImage{
+                display:flex;
+                justify-content: center;
+                padding:0.5rem;
+                width:100%;
+
+            .photoContainer{
                 position:relative;
-                width:50%;
+                width:50vw;
                 height:65vh;
     
                 .imgOne{
                     position:absolute;
                     top:2vh;
-                    left:1rem;
+                    right:55px;
                     width:165px;
                     z-index:1;
                 }
     
                 .imgThree{
                     position:absolute;
-                    width:160px;
+                    width:185px;
                     top:0vh;
-                    left:40vw;
+                    left:45px;
                     z-index:0
                 }
     
-           
-               
-                .dPhoto{
+                .imgTwo{
                     position:absolute;
                     width:220px;
                     bottom:6.2vh;
-                    left:1vw;
+                    right:10px;
                     z-index:-1
+                }
+
+                .drawOne{
+                    display:none;
+                }
+                .drawTwo{
+                    display:none;
                 }
            
     
             }
+        }
     
             .aboutText{
               
@@ -68,7 +79,7 @@
                     display:flex;
                     align-items: baseline;
                     justify-content: space-between;
-                    margin-top:1rem;
+                    margin-top:1.5rem;
                     
 
                    .about_link{
@@ -107,50 +118,84 @@
 @media screen and(min-width:768px){
 
         .mainAbout{
-           
             padding:1rem;
 
             .inner_about{
                 display:flex;
                 justify-content: space-between;
 
-
                 .aboutImage{
-                    position:relative;
+                    margin:1rem 0rem;
+                    height:65vh;
+                  
+                    .photoContainer{
+                        margin:2rem 0rem;
+                        position:none;
+                        width:75%;
+                        display:flex;
+                        justify-content: space-around;
+
+
+                        .boxOne{
+                            position:relative;
+                           
+                            width:50%;
+                            .imgOne{
+                                position:absolute;
+                                top:2vh;
+                                right:-50px;
+                                width:22vw;
+                                z-index:1;
+                            }
+                            .drawOne{
+                                display:block;
+                                position:absolute;
+                                width:22vw;
+                                top:15vh;
+                                right:100px;
+                                z-index:-1
+                            }
+                        }
+
+                        .boxTwo{
+                            
+                            position:relative;
+                            width:50%;
+
+                            .imgTwo{
+                                position:absolute;
+                                width:22vw;
+                                top:20vh;
+                                left:0px;
+                                z-index:1
+                            }
+
+                            .drawTwo{
+                                display:block;
+                                position:absolute;
+                                width:22vw;
+                                top:0;
+                                left:100px;
+                                z-index:-1
+                            }
+                        }
+
+                   
+            
+                        .imgThree{
+                            display:none;
+                        }
+            
+            
                     
-
-                    .imgOne{
-                        position:absolute;
-                        top:2vh;
-                        left:35vw;
-                        width:185px;
-                        z-index:1;
-                        transform: rotate(5deg);
-                    }
-
-                    .imgThree{
-                       
-                        position:absolute;
-                        width:200px;
-                        top:0vh;
-                        left:55vw;
-                        z-index:0
-                    }                
-                    .dPhoto{
-                      
-                        position:absolute;
-                        width:250px;
-                        bottom:6.2vh;
-                        left:15vw;
-                        right:0vw;
-                        z-index:-1
                     }
             
 
                 }
+            
 
                 .aboutText{
-                    margin:2rem 5rem;
+                    margin:1rem 5rem;
 
                     .aboutTextContent{
 
@@ -182,33 +227,63 @@
 
             .aboutImage{
                 position:relative;
-                width:100%;
-                height:60vh;
+                margin:1.5rem 0rem;
+              
                
-            
-                .imgOne{
-                    position:absolute;
-                    top:4vh;
-                    left:38vw;
-                    width:200px;
-                    z-index:1;
-                }
+                .photoContainer{
+                        
+                    position:none;
+                    width:100%;
+                    display:flex;
+                    justify-content: space-around;
 
-                .imgThree{
-                    position:absolute;
-                    width:200px;
-                    top:0vh;
-                    left:55vw;
-                    z-index:0
-                }                
-                .dPhoto{
-                    position:absolute;
-                    width:300px;
-                    bottom:0vh;
-                    left:18vw;
-                    right:0vw;
-                    z-index:-1
+
+                    .boxOne{
+                        position:relative;
+                     
+                        width:50%;
+                        .imgOne{
+                            position:absolute;
+                            top:2vh;
+                            right:-50px;
+                            width:17vw;
+                            z-index:1;
+                        }
+                        .drawOne{
+                            display:block;
+                            position:absolute;
+                            width:17vw;
+                            top:15vh;
+                            right:100px;
+                            z-index:-1
+                        }
+                    }
+
+                    .boxTwo{
+                        position:relative;
+                        width:50%;
+                       
+
+                        .imgTwo{
+                            position:absolute;
+                            width:17vw;
+                            top:20vh;
+                            left:0px;
+                            z-index:1
+                        }
+
+                        .drawTwo{
+                            display:block;
+                            position:absolute;
+                            width:17vw;
+                            top:0;
+                            left:100px;
+                            z-index:-1
+                        }
+                    }
                 }
+            
+              
         
 
             }
@@ -240,52 +315,82 @@
 @media screen and(min-width:1440px){
 
     .mainAbout{
-        margin:0rem 0rem;
+        
+        margin:1rem 0rem;
+        padding:0rem;
 
         .inner_about{
            
-            margin:1rem 0rem;
+            margin:0rem 0rem;
+            padding:0rem;
             display:flex;
             flex-direction: row;
-            justify-content: space-evenly;
-
+            justify-content: center;
 
             .aboutImage{
-            
+                position:relative;
                 width:45%;
-                height:65vh;
-                left:5vw;
+              
+               
+                .photoContainer{
+                    position:none;
+                    width:100%;
+                    display:flex;
+                    justify-content: center;
 
-                .imgOne{
-                    position:absolute;
-                    top:4vh;
-                    left:17vw;
-                    width:250px;
-                    z-index:1;
-                    transform: rotate(8deg);
-                }
 
-                .imgThree{
-                    position:absolute;
-                    width:220px;
-                    top:0vh;
-                    left:28vw;
-                    z-index:0
-                }                
-                .dPhoto{
-                    position:absolute;
-                    width:280px;
-                    bottom:5vh;
-                    left:5vw;
-                    right:0vw;
-                    z-index:-1
+                    .boxOne{
+                        position:relative;
+                        width:25%;
+                        .imgOne{
+                            position:absolute;
+                            top:2vh;
+                            right:-60px;
+                            width:10vw;
+                            z-index:1;
+                        }
+                        .drawOne{
+                            display:block;
+                            position:absolute;
+                            width:10vw;
+                            top:20vh;
+                            right:80px;
+                            z-index:-1
+                        }
+                    }
+
+                    .boxTwo{
+                        position:relative;
+                        width:25%;
+
+                        .imgTwo{
+                            position:absolute;
+                            width:10vw;
+                            top:20vh;
+                            left:0px;
+                            z-index:1
+                        }
+
+                        .drawTwo{
+                            display:block;
+                            position:absolute;
+                            width:10vw;
+                            top:0;
+                            left:100px;
+                            z-index:-1
+                        }
+                    }
                 }
+            
+              
+        
+
             }
 
             .aboutText{
      
                 width:35%;
-                margin:0rem 5rem;
+                margin:2rem 5rem;
                 height:65vh;
 
                 .aboutTextContent{
@@ -302,6 +407,8 @@
                     }
                     
                 }
+
+              
             }
         }
     }

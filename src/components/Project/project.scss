@@ -91,10 +91,14 @@
       .image-container{
           width:100%;
           
+          
           video{
-              width:100%;
-             
-                          
+              width:100%;      
+          }
+
+          img{
+              
+              width:250px;
           }
       }
 
@@ -113,30 +117,37 @@
 
         .content{
             margin:1rem 0rem;
-        }
+        
 
-        .description_container{
-           
-            margin: 4rem 0rem;
-            padding:0rem;
-            width:40%;
+                .description_container{
+                
+                    margin: 4rem 0rem;
+                    padding:0rem;
+                    width:100%;
 
-            .text{
-                h2{
-                    font-size: 1rem;
+                    .text{
+                        
+                        h2{
+                            font-size: 1rem;
+                        }
+                    }
+                    .links{
+
+                        h2{
+                            font-size: 1rem;
+                        }
+
+                        margin:0rem;
+                    }
                 }
-            }
-            .links{
 
-                h2{
-                    font-size: 1rem;
-                }
+               .image-container{
+                 img{
+                     width:500px;
+                 }
+               }
 
-                margin:0rem;
-            }
         }
-
-       
     }
 
 
@@ -182,9 +193,9 @@
 
           .description_container{
               position:relative;
-              top:-64px;
+              top:-95px;
               align-self:baseline;
-              width:45%;
+              width:50%;
               display:flex;
               flex-direction: column;
               justify-content: space-between;

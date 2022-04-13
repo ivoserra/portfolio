@@ -1,10 +1,12 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import { useContext } from 'react'
-import DataContextProvider, { DataContext } from '../DataContext'
+import DataContextProvider, { DataContext } from '../Context/DataContext'
 
 import './work.scss'
-import AnimatedPage from '../Animation/AnimatedPage.jsx'
-import { motion } from 'framer-motion'
+
+import {FaReact,FaHtml5, FaCss3, FaNodeJs, FaFigma} from 'react-icons/fa'
+import {SiJavascript, SiMongodb, SiExpress,SiPostman, SiFramer} from 'react-icons/si'
+
 
 
 export default function Work(){
@@ -21,7 +23,8 @@ const {data} = useContext(DataContext)
         <div className="projects">
        
         <section className="project">
-          <li ><h2>HTML / CSS / REACT</h2></li>
+
+        <li ><h2>Personal Projects</h2></li>
           <li className="title_one"><NavLink key="daddesignshop" to="daddesignshop">D.A.D. design shop</NavLink></li>
           <li className="title_two"><NavLink key="barbershop" to="barbershop" >Barbershop Amsterdam</NavLink></li>
           <li className="title_three"><NavLink key="ideascometogether" to="ideascometogether" >Ideas Come Together</NavLink></li>                   
@@ -37,7 +40,7 @@ const {data} = useContext(DataContext)
         <section className="project">
           <li ><h2>REACT and API</h2></li>
           <li className="title_six"><NavLink key="randompolaroid" to="randompolaroid" >Random Polaroid</NavLink></li>
-          <li className="title_seven"><NavLink key="fetchyflicker" to="fetchyflicker" >Fetchy Flicker</NavLink></li>
+          <li className="title_seven"><NavLink key="fetchyflicker" to="fetchyflicker" >Fetchy Flicker API</NavLink></li>
           <li className="title_eight"><NavLink key="localstoragethemetodos" to="localstoragethemetodos" >Local Storage</NavLink></li>               
         </section>
 
@@ -45,7 +48,7 @@ const {data} = useContext(DataContext)
 
         <section className="project">
           <li ><h2>Express / MongoDB</h2></li>
-          <li ><NavLink key="messageboard" to="messageboard">Message Board</NavLink></li>
+          <li className="title_nine"><NavLink key="messageboard" to="messageboard">Message Board</NavLink></li>
                       
         </section>
         </div>
