@@ -74,7 +74,7 @@ export default function Project(){
                 <section className="text">
                     <h2>description</h2>
                     <p>{project.description}</p>
-                    <p>Languages: {project.languages}</p>
+                    <p>Made with: {project.languages}</p>
                     <p>Responsive: {project.responsive}</p>
                     <p>Year: {project.year}</p>
                     <p>Author: {project.author}</p>
