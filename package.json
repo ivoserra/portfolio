@@ -1,6 +1,6 @@
 {
   "name": "portfolio-ivo-serra",
-  "home-page":"https://ivoserra.github.io/portfolio",
+  "home-page":".",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
