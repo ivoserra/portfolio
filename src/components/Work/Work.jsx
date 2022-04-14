@@ -4,8 +4,6 @@ import DataContextProvider, { DataContext } from '../Context/DataContext'
 
 import './work.scss'
 
-import {FaReact,FaHtml5, FaCss3, FaNodeJs, FaFigma} from 'react-icons/fa'
-import {SiJavascript, SiMongodb, SiExpress,SiPostman, SiFramer} from 'react-icons/si'
 
 
 
@@ -48,7 +46,9 @@ const {data} = useContext(DataContext)
 
         <section className="project">
           <li ><h2>Express / MongoDB</h2></li>
+          <li className="title_ten"><NavLink key="expressweatherproxy" to="expressweatherproxy">Express weather proxy API</NavLink></li>
           <li className="title_nine"><NavLink key="messageboard" to="messageboard">Message Board</NavLink></li>
+          
                       
         </section>
         </div>

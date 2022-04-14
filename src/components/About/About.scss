@@ -19,40 +19,58 @@
                 width:100%;
 
             .photoContainer{
-                position:relative;
-                width:50vw;
+                width:100%;
                 height:65vh;
+                display:flex;
+                justify-content: space-evenly;
+                
     
-                .imgOne{
-                    position:absolute;
-                    top:2vh;
-                    right:55px;
-                    width:165px;
-                    z-index:1;
+                .boxOne{
+                    width:20%;
+                    position:relative;
+
+                    .imgOne{
+                        position:absolute;
+                        top:2vh;
+                        width:165px;
+                        z-index:1;
+                    }
+                    .drawOne{
+                        position:absolute;
+                        top:25vh;
+                        width:165px;
+                        z-index:1;
+                    
+                    }
+
+
                 }
-    
-                .imgThree{
-                    position:absolute;
-                    width:185px;
-                    top:0vh;
-                    left:45px;
-                    z-index:0
-                }
-    
+
+                .boxTwo{
+                    position:relative;
+                    width:20%;
+                    
+
                 .imgTwo{
                     position:absolute;
-                    width:220px;
+                    width:160px;
                     bottom:6.2vh;
-                    right:10px;
+                    right:1px;
                     z-index:-1
                 }
 
-                .drawOne{
-                    display:none;
-                }
+               
                 .drawTwo{
-                    display:none;
+                    position:absolute;
+                    width:150px;
+                    top:10vh;
+                    right:1px;
+                    z-index:-1
                 }
+
+                }
+    
+            
            
     
             }
@@ -75,6 +93,77 @@
                     
                 }
 
+                .about_skills{
+                    width:100%;
+                    
+
+                    .about_icon{
+                        margin-top: 1rem;
+                        display:flex;
+                        flex-wrap: wrap;
+                        justify-content: left;
+                       
+
+                        .icon_box{
+                            display:flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 0.3rem;
+                            margin:0rem 0.2rem;
+
+                            .icon{
+                               
+                                font-size: 2rem;
+
+                            }
+
+                            p{
+                                font-size: 0.6rem;
+                            }
+                        }
+                                    
+
+                    }
+                   
+                }
+
+                .about_contact{
+                    h2{
+                        margin-bottom: 0.5rem;
+                    };
+
+                    .contact{
+                        list-style-type: none;
+                        color:rgb(68, 68, 68);
+                        position:relative;
+                        margin-top:0.7rem;
+                        margin-bottom:0.5rem;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        cursor:pointer;
+                        text-decoration: none;
+                    }
+                    .contact:after{
+                        content:'';
+                        position:absolute;
+                        top:1.6rem;
+                        width:160px;
+                        transform:scaleX(0);
+                        height:1px;
+                        bottom:0;
+                        left:0;
+                        background-color: rgb(44, 44, 44);
+                        transform-origin:bottom right;
+                        transition: transform 0.25s ease-out;
+                    }
+                    .contact:hover:after{
+                        transform:scaleX(1);
+                        transform-origin: bottom left;
+                        
+                    }
+
+                }
+
                 .about_links{
                     display:flex;
                     align-items: baseline;
@@ -95,8 +184,9 @@
                            text-decoration: none;
                            font-size: 2rem;
                            margin:0.5rem 0rem;
-                           color:black;
+                           color:hotpink;
                            cursor:pointer;
+
                        }
 
                        p{
@@ -106,6 +196,8 @@
 
 
                 }
+
+                
             }
 
 
@@ -220,10 +312,12 @@
 @media screen and(min-width:1024px){
 
     .mainAbout{
+
         padding:1rem;
 
         .inner_about{
             display:flex;
+            height:100%;
 
             .aboutImage{
                 position:relative;
@@ -252,7 +346,7 @@
                         .drawOne{
                             display:block;
                             position:absolute;
-                            width:17vw;
+                            width:18vw;
                             top:15vh;
                             right:100px;
                             z-index:-1
@@ -290,7 +384,7 @@
 
             .aboutText{
                 margin:5rem 8rem;
-                height:50vh;
+                height:100%;
 
                 .aboutTextContent{
 
@@ -306,6 +400,10 @@
                     }
                     
                 }
+
+                .about_links{
+                    margin-top: 2rem;
+                }
             }
         }
     }
@@ -315,8 +413,7 @@
 @media screen and(min-width:1440px){
 
     .mainAbout{
-        
-        margin:1rem 0rem;
+        margin:1rem 2rem;
         padding:0rem;
 
         .inner_about{
@@ -329,7 +426,7 @@
 
             .aboutImage{
                 position:relative;
-                width:45%;
+                width:33%;
               
                
                 .photoContainer{
@@ -354,7 +451,7 @@
                             position:absolute;
                             width:10vw;
                             top:20vh;
-                            right:80px;
+                            right:70px;
                             z-index:-1
                         }
                     }
@@ -390,11 +487,11 @@
             .aboutText{
      
                 width:35%;
-                margin:2rem 5rem;
-                height:65vh;
+                margin:1rem 5rem;
+                height:100%;
 
                 .aboutTextContent{
-
+                    
                     h2{
                         font-size: 1rem;
                         margin-top:0.5rem;

@@ -43,43 +43,32 @@
               flex-direction: column;
               justify-content: left;
               margin-top:2.5rem;
-            
-
-              h2{
-                  font-size: 1rem;
-              }
+    
 
               .linkBlock{
                   margin:1rem 0rem;
                   display:flex;
+                  justify-content: left;
 
                   .link{
                     display:flex;
                     flex-direction: column;
                     align-items: center;
-                    height: 80px;
-  
-                    p{
-                        font-size: 0.7rem;
-                    }
-  
-                    a{
-                      text-decoration: none;
-                      font-size: 0.8rem;
-                      margin:0rem 2rem;
-                      color:black;
-                      cursor:pointer;
-                      display:flex;
+    
+                        p{
+                            font-size: 0.7rem;
+                        }
+    
+                        .iconLink{
+                        text-decoration: none;
+                        font-size: 2rem;
+                        margin:0rem 2rem;
+                        color:hotpink;
+                        cursor:pointer;
+                        display:flex;
         
-                      .iconLink{
-                          font-size: 2rem;
-                          
-                      }
-  
-                      a:hover{
-                          color:aqua;
-                      }
-                  }
+                        }
+                    
                 }
               }
 
@@ -93,12 +82,12 @@
           
           
           video{
+             
               width:100%;      
           }
 
           img{
-              
-              width:250px;
+              width:100%;
           }
       }
 
