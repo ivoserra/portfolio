@@ -21,7 +21,7 @@ export default function Path(){
                  <Routes key={location.pathname} location={location}>
               
             
-                    <Route path="/portfolio" index element={<Home/>}/>
+                    <Route path="/" element={<Home/>}/>
                     <Route path="/about" element={<About/>}/>"
 
                     <Route path="/work" element={<Work/>}>
