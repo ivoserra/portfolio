@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ivoserra/portfolio/static/css/main.70af97be.css",
+    "main.js": "/ivoserra/portfolio/static/js/main.28541381.js",
+    "static/media/dphoto.png": "/ivoserra/portfolio/static/media/dphoto.1391d573444fc7b39c82.png",
+    "static/media/drawTwo.png": "/ivoserra/portfolio/static/media/drawTwo.7e92fab65b15d11e459e.png",
+    "static/media/ivo2.png": "/ivoserra/portfolio/static/media/ivo2.aed19f681e2e31037ecc.png",
+    "static/media/ivoOne.png": "/ivoserra/portfolio/static/media/ivoOne.72519633aca657767da0.png",
+    "static/media/drawOne.png": "/ivoserra/portfolio/static/media/drawOne.106607fdb7837dc85ebd.png",
+    "static/media/cloud.png": "/ivoserra/portfolio/static/media/cloud.fad6a37ce387cf2ab5f4.png",
+    "static/media/Mount.png": "/ivoserra/portfolio/static/media/Mount.d81269ee5ba46cf1b43f.png",
+    "index.html": "/ivoserra/portfolio/index.html",
+    "main.70af97be.css.map": "/ivoserra/portfolio/static/css/main.70af97be.css.map",
+    "main.28541381.js.map": "/ivoserra/portfolio/static/js/main.28541381.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70af97be.css",
+    "static/js/main.28541381.js"
+  ]
+}
