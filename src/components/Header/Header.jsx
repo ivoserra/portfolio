@@ -30,9 +30,9 @@ export default function Header(){
                 <section className="sub-header">
                 
                 <nav className="nav-sub-header">
-                        <NavLink to="portfolio" className="subLinkOne">home</NavLink>
-                        <NavLink to="about" className="subLinkTwo">about</NavLink>
-                        <NavLink to="work" className="subLinkThree">work</NavLink>
+                        <NavLink to="/portfolio" className="subLinkOne">home</NavLink>
+                        <NavLink to="/about" className="subLinkTwo">about</NavLink>
+                        <NavLink to="/work" className="subLinkThree">work</NavLink>
                 </nav>
                 
 

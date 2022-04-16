@@ -21,11 +21,10 @@ export default function Path(){
               
             
                     <Route path="/portfolio" index element={<Home/>}/>
-                    <Route path="/about" element={<About/>}/>"
+                    <Route path="about" element={<About/>}/>"
 
-                    <Route path="/work" element={<Work/>}>
+                    <Route path="work" element={<Work/>}>
                         <Route path=":workName" element={<Project/>}/>
-                        
                     </Route>
 
 
