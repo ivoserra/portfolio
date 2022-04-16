@@ -20,15 +20,13 @@ export default function Path(){
        <AnimatePresence exitBeforeEnter>
                  <Routes key={location.pathname} location={location}>
               
-            
                     <Route path="/portfolio" index element={<Home/>}/>
                     <Route path="/about" element={<About/>}/>"
-
-                    <Route path="/work" element={<Work/>}>
-                        <Route path=":workName" element={<Project/>}/>
-                        
+                    
+                    <Route path="/work">
+                        <Route index element={<Work/>}/>
+                        <Route path=":workName" element={<Project/>}/>  
                     </Route>
-
 
                     <Route path="*" element={<Error/>}/>
                 </Routes>
