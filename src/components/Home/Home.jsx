@@ -23,7 +23,10 @@ export default function Home(){
    
         <section className='Hero'>
         <motion.section variants={title} initial="hidden" animate="visible" exit="exit">
-            <p>["hello world!"]</p>
+        <section className='Hero_text'>
+        <p>["hello world!"]</p>
+        </section>
+            
         </motion.section>
 
            <motion.section variants={serra} initial="hidden" animate="visible" exit="exit">

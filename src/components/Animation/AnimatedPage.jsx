@@ -18,9 +18,10 @@ export default function AnimatedPage({children}){
         <motion.div 
         variants={animations} 
         initial="initial" 
-        animate="animate" 
+        animate="animate"
+        whileInView="visible" 
         exit="exit"
-        transition={{duration: 0.5}}>
+        transition={{duration: 0.4}}>
 
             {children}
 

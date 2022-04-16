@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import DataContextProvider, { DataContext } from '../Context/DataContext'
 
 import './work.scss'
+import AnimatedPage from '../Animation/AnimatedPage'
 
 
 
@@ -15,9 +16,9 @@ const {data} = useContext(DataContext)
       
     return (
    
-     
+  
         <section className="works">
-    
+        <AnimatedPage>
         <div className="projects">
        
         <section className="project">
@@ -52,6 +53,7 @@ const {data} = useContext(DataContext)
                       
         </section>
         </div>
+        </AnimatedPage>
        
         <Outlet/>
 
