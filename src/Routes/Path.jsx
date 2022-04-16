@@ -27,7 +27,6 @@ export default function Path(){
                         <Route path=":workName" element={<Project/>}/>
                     </Route>
 
-
                     <Route path="*" element={<Error/>}/>
                 </Routes>
         </AnimatePresence>
