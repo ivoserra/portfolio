@@ -34,7 +34,7 @@ export default function Home(){
                 <img src={mount} className="mountain"></img>
                 <img className="cloud" src={cloud}></img>
                 <img className="cloudOne" src={cloud}></img>
-                <img></img>
+                
             </section>
             </motion.section>
         </section>

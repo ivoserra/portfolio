@@ -12,7 +12,6 @@
       
     
         .Hero_text{
-          
             position:relative;
             top:13vh;
         p{
@@ -28,12 +27,11 @@
             width:100%;
             text-align: center;
             position:relative;
-            width:100%;
             overflow: hidden;
        
           
             .mountain{
-                width:100vw;
+                width:100%;
                 object-fit: cover;
                 object-position: -2vw 0vh;
                 z-index: 1;
@@ -86,7 +84,7 @@
 
         .Hero_text{
             position:relative;
-            top:20vh;
+            top:15vh;
         p{
             color:black;
             text-align: center;
@@ -167,7 +165,7 @@
        
           
             .mountain{
-                width:55vw;
+                width:650px;
                 object-fit: cover;
                 object-position: 0vw 0vh;
                
@@ -231,7 +229,7 @@
            
               
                 .mountain{
-                    width:35vw;
+                    width:650px;
                     object-fit: cover;
                     object-position: 0vw 0vh;
                    

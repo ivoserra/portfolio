@@ -24,9 +24,9 @@ const {data} = useContext(DataContext)
         <section className="project">
 
         <li ><h2>Personal Projects</h2></li>
-          <li className="title_one"><NavLink key="daddesignshop" to="/work/daddesignshop">D.A.D. design shop</NavLink></li>
-          <li className="title_two"><NavLink key="barbershop" to="/work/barbershop" >Barbershop Amsterdam</NavLink></li>
-          <li className="title_three"><NavLink key="ideascometogether" to="/work/ideascometogether" >Ideas Come Together</NavLink></li>                   
+          <li className="title_one"><NavLink key="daddesignshop" to="daddesignshop">D.A.D. design shop</NavLink></li>
+          <li className="title_two"><NavLink key="barbershop" to="barbershop" >Barbershop Amsterdam</NavLink></li>
+          <li className="title_three"><NavLink key="ideascometogether" to="ideascometogether" >Ideas Come Together</NavLink></li>                   
           </section> 
        
         
